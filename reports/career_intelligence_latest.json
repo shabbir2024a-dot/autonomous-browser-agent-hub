@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-11-05T11:53:27.991Z",
+  "queryRole": "Staff Technical Program Manager AI Systems",
+  "totalScanned": 2,
+  "highMatchOpportunities": [
+    {
+      "title": "Principal Technical Program Manager — Autonomous AI Agents & Browser Infrastructure",
+      "company": "Anthropic / Scale AI Ecosystem",
+      "location": "Remote (US/Global)",
+      "compensationRange": "$210,000 - $285,000 + Equity",
+      "sourceUrl": "https://www.linkedin.com/jobs/view/autonomous-ai-tpm",
+      "matchScore": 98.5,
+      "matchedCompetencies": [
+        "Playwright + MCP Agent Architecture",
+        "High-Throughput Microservices",
+        "Cross-Functional Roadmaps & SLA Delivery"
+      ],
+      "tailoredExecutivePitch": "Dear Ecosystem Partner Hiring Team,\n\nI am writing to express my strong interest in the Principal TPM Autonomous Agents role. As an AI Systems Architect and Technical Program Manager, I specialize in architecting production autonomous agent hubs (Playwright + Model Context Protocol) and high-concurrency cloud microservices (24/7 WhatsApp Cloud AI daemons on Google Cloud Compute Engine).\n\nMy core technical footprint directly aligns with your requirements in Playwright + MCP Browser Robots, WhatsApp Cloud 24/7 AI Daemons, Staff-level TPM Delivery. In recent delivery cycles, I have built self-healing browser automation pipelines, end-to-end multi-modal content engines, and enterprise SLA-backed microservices.\n\nI look forward to discussing how my hybrid TPM delivery rigor and systems engineering expertise will accelerate Ecosystem Partner's operational velocity."
+    },
+    {
+      "title": "AI Systems Architect — Enterprise Agentic Workflows & Multi-Modal Pipelines",
+      "company": "Decentralized AI Labs",
+      "location": "Remote (US East / Tier-1)",
+      "compensationRange": "$190,000 - $250,000",
+      "sourceUrl": "https://www.linkedin.com/jobs/view/ai-systems-architect",
+      "matchScore": 96,
+      "matchedCompetencies": [
+        "Multi-Agent Dispatchers",
+        "GCP Compute Engine Daemonization",
+        "FastAPI / Node.js Microservices"
+      ],
+      "tailoredExecutivePitch": "Dear Enterprise Tech Hiring Team,\n\nI am writing to express my strong interest in the AI Systems Architect role. As an AI Systems Architect and Technical Program Manager, I specialize in architecting production autonomous agent hubs (Playwright + Model Context Protocol) and high-concurrency cloud microservices (24/7 WhatsApp Cloud AI daemons on Google Cloud Compute Engine).\n\nMy core technical footprint directly aligns with your requirements in Autonomous Multi-Modal Automation, Cloud VM Resilience & PM2 Scaling, Zero-Latency Microservices. In recent delivery cycles, I have built self-healing browser automation pipelines, end-to-end multi-modal content engines, and enterprise SLA-backed microservices.\n\nI look forward to discussing how my hybrid TPM delivery rigor and systems engineering expertise will accelerate Enterprise Tech's operational velocity."
+    }
+  ],
+  "summary": "Evaluated 2 opportunities. Highest match score: 98.5% for Principal Technical Program Manager — Autonomous AI Agents & Browser Infrastructure."
+}

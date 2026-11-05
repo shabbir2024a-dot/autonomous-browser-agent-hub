@@ -1,156 +1,142 @@
-# 🤖 Autonomous Browser Agent Hub
+# 🤖 Aegis AgentOS (v2.0) — Autonomous Browser & Multi-Agent Operations System
 
 <div align="center">
 
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Model Context Protocol](https://img.shields.io/badge/Protocol-MCP-00E5FF?style=for-the-badge&logo=anthropic&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![WhatsApp Cloud AI](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+![FFmpeg 7.1](https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 <p align="center">
-  <b>Production Multi-Platform Autonomous Browser Agent Engine</b><br/>
-  <i>Self-driving browser automation across LinkedIn, YouTube Studio, and Facebook powered by Playwright Stealth and Model Context Protocol (MCP).</i>
+  <b>Enterprise Omni-Agentic Autonomous Operations System</b><br/>
+  <i>Engineered by <b>Shabbir Ahmed</b> (AI Systems Architect & Staff Technical Program Manager).<br/>
+  Combines Playwright MCP Browser Robots, YouTube Viral Trend Intelligence, Clean 3D Video Production, Career Market Matching, and a 24/7 WhatsApp Remote Command Gateway.</i>
 </p>
 
 </div>
 
 ---
 
-## ⚡ Architecture & Orchestration
-
-The **Autonomous Browser Agent Hub** enables autonomous AI agents (Claude Opus, GPT-4o, InceptionLabs Mercury-3, Gemini 2.0) to operate real-world social platforms through resilient, human-like browser actions without API lock-in or rate-limit penalties.
+## ⚡ System Architecture
 
 ```mermaid
 flowchart TD
-    subgraph AgentLayer ["🧠 Autonomous AI Agents"]
-        Agent["Autonomous Reasoning Agent\n(Claude 3.5 / GPT-4o / Mercury-3)"]
-        Prompts["Task Brief & Content Directive\n(EDL Scripts, Media, Captions)"]
-        Agent --> Prompts
+    subgraph Ingestion ["📱 WhatsApp Remote Gateway & Command Dispatcher"]
+        WA["WhatsApp Client / Voice Notes\n(Operator Smartphone)"]
+        Gateway["WhatsAppCommandGateway\n(Natural Language Dispatcher)"]
+        WA -->|"!radar / !produce / !jobs / !status"| Gateway
     end
 
-    subgraph MCPBridge ["🔌 Protocol & Tool Abstraction"]
-        Bridge["MCPAgentBridge\n(JSON-RPC Tool Handlers)"]
-        Tools["• publish_linkedin_post\n• upload_youtube_video\n• publish_facebook_update"]
-        Prompts --> Bridge
-        Bridge --- Tools
+    subgraph AgentCore ["🧠 Agent Intelligence & MCP Protocol Layer"]
+        Bridge["MCPAgentBridge\n(7 Standardized MCP Tool Schemas)"]
+        Gateway --> Bridge
+        LLM["Autonomous LLM Planners\n(Claude 3.5 Sonnet / Gemini 2.0 / GPT-4o)"]
+        LLM <--> Bridge
     end
 
-    subgraph BrowserCore ["🛡️ Stealth Execution Core"]
-        SessionMgr["BrowserSessionManager\n(Persistent Contexts & Cookie Vault)"]
-        Stealth["• Navigator.webdriver Scrubbing\n• Human Keystroke Jitter (20-40ms)\n• Dynamic Viewport & UA Emulation"]
-        Bridge --> SessionMgr
-        SessionMgr --- Stealth
+    subgraph AutonomousPipelines ["⚙️ Autonomous Execution Engines"]
+        Radar["🛰️ YouTube Viral Radar\n(Competitor Outlier Multipliers & Hook Mining)"]
+        VideoEngine["🎬 3D Video Production Engine\n(Neural Edge-TTS + Clean FFmpeg + Zero-Burnin Rules)"]
+        CareerRobot["💼 Career Intelligence Robot\n(Staff TPM / AI Architect Scoring & Pitch Synthesis)"]
+        StudioMgr["📤 YouTube Studio Automation\n(Uploads, HD Verification & Peak US Scheduling)"]
+        SocialMgr["🌐 Social Media Publisher\n(LinkedIn TipTap & Facebook Automation)"]
+
+        Bridge --> Radar
+        Bridge --> VideoEngine
+        Bridge --> CareerRobot
+        Bridge --> StudioMgr
+        Bridge --> SocialMgr
     end
 
-    subgraph PlatformTargets ["🌐 Live Platform Execution"]
-        LI["LinkedIn Automation\n(Feed & TipTap Editor)"]
-        YT["YouTube Studio Engine\n(Uploads, SEO, Metadata & Analytics)"]
-        FB["Facebook Publisher\n(Pages & Feed Status Posts)"]
-        SessionMgr --> LI
-        SessionMgr --> YT
-        SessionMgr --> FB
+    subgraph OutputSurfaces ["🚀 Delivered Operational Results"]
+        Radar --> RReport["reports/viral_radar_latest.json"]
+        CareerRobot --> CReport["reports/career_intelligence_latest.json"]
+        VideoEngine --> VMaster["Clean Master MP4 (-14 LUFS)"]
+        StudioMgr --> LiveYT["Live / Scheduled on YouTube Studio"]
+        RReport & CReport & VMaster & LiveYT --> WAFeedback["Actionable Status & Dossier sent back to WhatsApp"]
     end
 ```
 
 ---
 
-## 🚀 Key Modules & Capabilities
+## 🛠️ The Four Core Autonomous Engines
 
-### 1. 💼 LinkedIn Autonomous Publisher (`src/platforms/linkedin_publisher.ts`)
-- **Rich Text Handling**: Bypasses complex TipTap/DraftJS virtual DOM wrappers by emitting native keyboard events.
-- **Media Attachment**: Automates file drop and file dialog inputs for carousels, infographics, and banners.
-- **Stealth Timing**: Human typing cadence with randomized pauses (1.5s–3.5s) to avoid bot flags.
-- **Visual Evidence**: Automatically captures viewport screenshots after submission to verify feed placement.
+### 1. 📱 WhatsApp Remote Command Center (`src/dispatchers/whatsapp_command_gateway.ts`)
+Allows the operator to manage the entire autonomous fleet directly from their phone via WhatsApp messages or voice notes:
+- `!radar`: Triggers the competitor outlier crawler and delivers the top 3 breakout concepts with retention scores.
+- `!produce <topic>`: Runs the full script-to-master render pipeline with zero manual intervention.
+- `!jobs` / `!career`: Scans high-value Staff TPM and AI Architect roles, calculates technical alignment, and returns executive pitches.
+- `!status` / `!stats`: Returns real-time YouTube Studio status (HD processing, checks, live views) and GCP cloud VM health.
 
-### 2. 🎥 YouTube Studio Autonomous Manager (`src/platforms/youtube_studio_manager.ts`)
-- **End-to-End Upload Pipeline**: Uploads MP4/WebM binaries directly through `studio.youtube.com`.
-- **Metadata Injection**: Automated population of video titles, descriptions, chapters, and SEO tags.
-- **Compliance Toggling**: Automatically completes "Made for Kids" radio selectors and visibility stages (Public / Unlisted / Private).
-- **Studio Analytics Scraping**: Extracts channel views, watch time, and subscriber growth without OAuth scopes.
+### 2. 🛰️ YouTube Viral Radar (`src/intelligence/youtube_viral_radar.ts`)
+- Automatically monitors benchmark science & 3D animation channels (`@zackdfilms`, `@TheActionLab`, `@veritasium`).
+- Calculates **Outlier Multiplier** ($\text{Views}_{\text{video}} / \text{Views}_{\text{channel\_avg}}$) and velocity curves.
+- Mines top-performing retention formulas (e.g., *Tutorial Dilemma*, *Catastrophic Scenario Simulation*, *Primal Phobia*).
+- Outputs production dossiers to `reports/viral_radar_latest.json`.
 
-### 3. 📱 Facebook Publisher (`src/platforms/facebook_publisher.ts`)
-- **Cross-Surface Posting**: Supports publishing directly to user profiles or managed business Pages.
-- **Rich Media Support**: Single or multi-image attachments with preview verification.
-- **Session Preservation**: Uses persistent browser profiles (`userDataDir`) to survive 2FA and multi-day session lifespans.
+### 3. 🎬 Automated 3D Video Production Engine (`src/pipelines/video_production_engine.ts`)
+- **Retention Hook Scripting**: Formulates 54-second multi-quest scripts following the Danny Why retention law.
+- **Broadcast Voiceover**: Synthesizes Microsoft Edge Neural audio (`en-US-AndrewMultilingualNeural` at +3% speed).
+- **Clean Merge Rule**: Strictly enforces zero burn-in writing, zero drawtext filters, and zero HUD borders on the 3D frames, mastering audio to `-14 LUFS` and `-1 dB True Peak`.
+- **Autonomous Publishing**: Directly hands off master renders to `YouTubeStudioManager` for automated uploading, HD verification, and peak US prime-time scheduling.
 
-### 4. 🔌 Model Context Protocol (MCP) Bridge (`src/core/mcp_agent_bridge.ts`)
-- Implements the open standard Model Context Protocol.
-- Enables agent frameworks (Antigravity, LangChain, AutoGen, CrewAI) to discover tools and call browser actions programmatically via JSON schemas.
-
----
-
-## 📦 Directory Structure
-
-```
-autonomous_browser_agent_hub/
-├── src/
-│   ├── core/
-│   │   ├── browser_session_manager.ts   # Persistent context & stealth flags
-│   │   └── mcp_agent_bridge.ts          # MCP tool schema definitions & router
-│   ├── platforms/
-│   │   ├── linkedin_publisher.ts        # LinkedIn feed & TipTap automation
-│   │   ├── youtube_studio_manager.ts    # YouTube Studio video upload & metrics
-│   │   └── facebook_publisher.ts        # Facebook feed & Page status updates
-│   └── index.ts                         # System export & CLI runner
-├── package.json
-├── tsconfig.json
-├── .gitignore
-└── README.md
-```
+### 4. 💼 Career & Client Opportunity Intelligence Robot (`src/intelligence/career_intelligence_robot.ts`)
+- Continuously scans enterprise tech job boards and LinkedIn for Staff/Principal Technical Program Manager and AI Systems Architect roles.
+- Evaluates role fit against 4 core competency pillars:
+  1. *Autonomous Agent Frameworks (Playwright + MCP)*
+  2. *High-Concurrency Microservices (FastAPI / Node.js)*
+  3. *Cloud Daemon Infrastructure (GCP Compute Engine, Docker, PM2)*
+  4. *Technical Program Delivery & Enterprise SLAs*
+- Generates 0–100% Match Scores and tailored 3-paragraph executive pitches saved to `reports/career_intelligence_latest.json`.
 
 ---
 
-## 🛠️ Quickstart & Usage
+## 💻 CLI & Autonomous Agent Usage
 
-### 1. Installation
-
+### Install Dependencies & Build
 ```bash
-git clone https://github.com/shabbir2024a-dot/autonomous-browser-agent-hub.git
-cd autonomous-browser-agent-hub
 npm install
 npm run build
 ```
 
-### 2. Programmatic TypeScript API
+### Run the Interactive Multi-Agent Suite
+```bash
+# Execute the complete autonomous sequence (Radar -> Career -> Video Engine -> Gateway)
+npm run agent:all
 
+# Run individual autonomous robots
+npm run agent:radar
+npm run agent:career
+npm run agent:produce "The 30-Millisecond Hydrostatic Shockwave"
+npm run agent:gateway "!status"
+```
+
+### Use via Model Context Protocol (MCP)
+Run as an MCP tool provider for Claude Desktop, Gemini CLI, or Antigravity:
 ```typescript
 import { MCPAgentBridge } from 'autonomous-browser-agent-hub';
 
-// Initialize agent bridge with persistent session profile
-const agent = new MCPAgentBridge('./user_data_profile', false);
+const bridge = new MCPAgentBridge();
 
-// Execute an autonomous LinkedIn publication
-const result = await agent.executeTool('publish_linkedin_post', {
-  content: '🚀 Scaling autonomous AI agent infrastructure with Playwright and MCP! #AI #Automation',
-  mediaPath: '/absolute/path/to/banner.png'
+// Execute any registered MCP tool
+const result = await bridge.executeTool('scan_youtube_viral_radar', {
+  channels: ['@zackdfilms', '@TheActionLab']
 });
-
-console.log('Publication Result:', result);
-```
-
-### 3. CLI Testing
-
-```bash
-# Inspect available MCP agent tools
-npm start
-
-# Run dedicated platform tests
-npm run agent:linkedin
-npm run agent:youtube
-npm run agent:facebook
 ```
 
 ---
 
-## 🛡️ Security & Privacy Architecture
-
-- **Zero Hardcoded Credentials**: This engine never accepts or stores plain-text passwords. All authentication relies on encrypted local persistent session contexts (`userDataDir`) or pre-authenticated browser cookies.
-- **Git Guardian Protected**: `.gitignore` strictly blocks all session caches (`userDataDir/`), screenshots (`screenshots/`), and local environment files (`.env*`).
-- **Rate-Limiting & Jitter**: Built-in pacing ensures requests conform to human operational velocity, protecting accounts from platform security trips.
+## 👤 Author & Architecture
+**Shabbir Ahmed (Bishal)**  
+*AI Systems Architect • Autonomous Agent Specialist • Technical Program Manager*  
+- **GitHub**: [@shabbir2024a](https://github.com/shabbir2024a)  
+- **LinkedIn**: [shabbir-ahmed-a095a3334](https://www.linkedin.com/in/shabbir-ahmed-a095a3334/)  
+- **YouTube Production Channel**: [@WhatHappensNext-3D](https://youtube.com/@WhatHappensNext-3D)  
+- **Email**: shabbir2024a@gmail.com  
 
 ---
 
-## 📜 License
-
-Distributed under the **MIT License**. Engineered for production autonomous AI workflows by [Shabbir Ahmed (Bishal)](https://github.com/shabbir2024a-dot).
+## 📄 License
+MIT License. Open for enterprise agentic automation, research, and production deployment.

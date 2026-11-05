@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-11-05T11:53:42.079Z",
+  "trackedChannels": [
+    "@zackdfilms",
+    "@TheActionLab",
+    "@veritasium"
+  ],
+  "topOutliers": [],
+  "viralConcepts": [
+    {
+      "topic": "Why 10,000 Volts Vaporizes Metal But Leaves Skin Intact (The Skin Effect in 3D)",
+      "hookLine": "Touch a high-frequency wire carrying ten thousand volts, and your blood won't even warm up. But drop a penny on it, and it vaporizes instantly.",
+      "whyItWorks": "Counter-intuitive physical law. High visual payoff with electrical arcing and cellular cutaways.",
+      "targetFormat": "shorts",
+      "estimatedRetentionScore": 94.5,
+      "suggestedTags": [
+        "physics",
+        "electromagnetism",
+        "skineffect",
+        "science",
+        "3dsimulation"
+      ]
+    },
+    {
+      "topic": "What Happens When an Elevator Snaps at Floor 100? (The 4 Air Brakes Explained)",
+      "hookLine": "Every elevator cable is cut at the 100th floor. You have four seconds before terminal impact. But you won't crash—and here is the brutal physics why.",
+      "whyItWorks": "Universal primal phobia. Directly debunks the popular \"jump at the last second\" myth.",
+      "targetFormat": "shorts",
+      "estimatedRetentionScore": 96.2,
+      "suggestedTags": [
+        "elevatorphysics",
+        "engineering",
+        "survival",
+        "3dcutaway",
+        "whathappensnext"
+      ]
+    },
+    {
+      "topic": "The 30-Millisecond Implosion: What 6,000 PSI Does to Solid Titanium",
+      "hookLine": "At twelve thousand feet, the water pressure outside doesn't crush you like an aluminum can. It ignites the air inside like a diesel piston in thirty milliseconds.",
+      "whyItWorks": "Extreme deep-sea physics, adiabatic compression flash phenomenon, massive viral intrigue.",
+      "targetFormat": "long_form",
+      "estimatedRetentionScore": 91.8,
+      "suggestedTags": [
+        "deepsea",
+        "implosion",
+        "hydrostaticpressure",
+        "physicsexplained",
+        "documentary"
+      ]
+    }
+  ],
+  "summary": "Identified 0 competitor outliers. Synthesized 3 tier-1 concept briefs with Danny Why retention beats."
+}
