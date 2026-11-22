@@ -1,3 +1,5 @@
+<img src=".github/cover.png" alt="cover" width="100%" />
+
 # 🤖 Aegis AgentOS (v2.0) — Autonomous Browser & Multi-Agent Operations System
 
 <div align="center">
